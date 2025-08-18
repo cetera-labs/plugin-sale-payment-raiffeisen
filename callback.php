@@ -36,7 +36,6 @@ try {
             $order->paymentSuccess();
             $gateway->sendReceiptSell();
         }
-        file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/uploads/logs/raiff.log', date('Y.m.d H:i:s')." ".$_SERVER['QUERY_STRING']." ".$_SERVER['REMOTE_ADDR']." "var_dump($requestBody)."\n", FILE_APPEND);
         header("HTTP/1.1 200 OK");
         print 'OK';		
     }
