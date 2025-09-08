@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "cetera-labs/plugin-sale": "dev-master"
+        "cetera-labs/plugin-sale": "*"
     },
     
     "minimum-stability": "dev",
